@@ -22,7 +22,7 @@ export default class login extends Component {
                         <input type="password" name="password" placeholder="Password" />
                         <br />
                         {/* <button type="submit" id="login" class="button">Login</button> */}
-                        <NavLink to='/' class="button">Home</NavLink>
+                        <NavLink to='/' class="button">Login</NavLink>
                         {/* <a href="scrnsvr.html" class="button">Exit</a> */}
                         <NavLink to='/ScreenSaver' class="button">Exit</NavLink>
                     </form>
