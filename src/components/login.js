@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default class login extends Component {
     render() {
@@ -20,8 +21,10 @@ export default class login extends Component {
                         <br />
                         <input type="password" name="password" placeholder="Password" />
                         <br />
-                        <button type="submit" id="login" class="button">Login</button>
-                        <a href="scrnsvr.html" class="button">Exit</a>
+                        {/* <button type="submit" id="login" class="button">Login</button> */}
+                        <NavLink to='/' class="button">Home</NavLink>
+                        {/* <a href="scrnsvr.html" class="button">Exit</a> */}
+                        <NavLink to='/ScreenSaver' class="button">Exit</NavLink>
                     </form>
                 </div>
                 <footer class="containerfooter">

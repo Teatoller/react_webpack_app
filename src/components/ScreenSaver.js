@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class ScreenSaver extends Component {
   render() {
@@ -11,8 +12,8 @@ class ScreenSaver extends Component {
 	</header>
 	<div class="containerlog">
 		<form>
-			<a href="login.html" class="button">Enter</a>
-			
+			{/* <a href="login.html" class="button">Enter</a> */}
+			<NavLink to="/login" class="button">Enter</NavLink>
 		</form>
 		
 	</div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 
 class HomeComponent extends Component {
     render() {
@@ -10,17 +11,8 @@ class HomeComponent extends Component {
                     </div>
                 </header>
                 <div className="main-menu">
-                    <a href="#" className="active">Home</a>
-                    <a href="vwAdmin.html">Admin</a>
-                    <a href="sattendant.html">Store Attendant</a>
-                    <a href="vwSocketGenInventory.html">Reports</a>
-                    <a href="#"> </a>
-                    <a href="#"> </a>
-                    <a href="#"> </a>
-                    <a href="#"> </a>
-                    <a href="#"> </a>
-                    <a href="#"> </a>
-                    <a href="#"> </a>
+                    <NavLink to='/' id="link">Home</NavLink>
+                    <NavLink to='/login' id="link">login</NavLink>
                 </div>
                 <footer className="temp-footer"><small>AC-33 &copy;2018</small>
                 </footer>
