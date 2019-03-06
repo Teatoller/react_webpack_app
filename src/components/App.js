@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import '../public/css/style.css'
 
 class App extends Component {
     render() {
         return (
-        <div>
-            <h1>webpack App</h1>
-        </div>
+            <div>
+                // routing
+            </div>
         );
     }
 }

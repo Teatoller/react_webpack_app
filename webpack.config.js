@@ -15,6 +15,30 @@ module.exports = {
           use: {
             loader: "babel-loader"
           }
+        },
+        {
+          test: /\.(css)$/,
+          use: ["style-loader", "css-loader"]
+        },
+        {
+          test: /\.(ttf|eot|woff|woff2)$/,
+          use: {
+            loader: "file-loader",
+            options: {
+              name: "fonts/[name].[ext]"
+            }
+          }
+        },
+        {
+          test: /\.(jpe?g|png|gif|svg|ico)$/i,
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                outputPath: "assets/"
+              }
+            }
+          ]
         }
       ]
     },
